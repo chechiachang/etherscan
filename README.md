@@ -13,5 +13,12 @@ As a last rat competitor, I want to
 - [] Get smart contract infomation automatically with etherscan api
   - [] Get the round end time in datetime format
   - [] Get a count down end time
-  - [] Get incomming tx
+  - [] Get latest incomming tx
+  - [] Get least 10 incomming txs
   - [] Get current active competitors information 
+
+# Usage
+
+```
+export API_TOKEN = "your-api-token"
+```
