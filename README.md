@@ -20,5 +20,6 @@ As a last rat competitor, I want to
 # Usage
 
 ```
-export API_TOKEN = "your-api-token"
+export API_KEY = "your-api-token"
+./ratscam
 ```
