@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func Get(url string) string {
+func Get(url string) []byte {
 	response, err := http.Get(url)
 	if err != nil {
 		fmt.Printf("%s", err)
@@ -19,5 +19,5 @@ func Get(url string) string {
 		fmt.Printf("%s", err)
 		os.Exit(1)
 	}
-	return string(contents)
+	return contents
 }
