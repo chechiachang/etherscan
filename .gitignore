@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# Applications
+/ratscam
+
 # Test binary, build with `go test -c`
 *.test
 
