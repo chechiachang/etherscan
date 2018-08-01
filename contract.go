@@ -18,28 +18,28 @@ func GetContract(contractId string) Contract {
 		panic(err)
 	}
 
-	var result []Result
-	if err := json.Unmarshal([]byte(escaped.Result), &result); err != nil {
+	var results []Result
+	if err := json.Unmarshal([]byte(escaped.Results), &results); err != nil {
 		panic(err)
 	}
 
 	return Contract{
 		Status:  escaped.Status,
 		Message: escaped.Message,
-		Result:  result,
+		Results: results,
 	}
 }
 
 type ContractEscaped struct {
 	Status  string `json:"status"`
 	Message string `json:"message"`
-	Result  string `json:"result"`
+	Results string `json:"result"`
 }
 
 type Contract struct {
 	Status  string   `json:"status"`
 	Message string   `json:"message"`
-	Result  []Result `json:"result"`
+	Results []Result `json:"result"`
 }
 
 type Result struct {
